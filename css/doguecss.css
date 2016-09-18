@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Didot';
+    src: url('font/Didot.ttf');
+}
+
+html h1 {
+    font: 70px 'Didot';
+    text-align: center;
+    margin-bottom: 0em;
+    padding: 0em;
+}
+
+html p {
+    font: 20px 'Didot';
+    text-align: center;
+}
+
+html a {
+    color: #ADEAEA;
+}
+
+html a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#done {
+    padding: 0.5em;
+}

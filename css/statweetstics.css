@@ -1,0 +1,82 @@
+/* ------------------ TITLE ------------------ */
+#statweetstics-title {
+	height: 25%;
+}
+#statweetstics-title .geometric-background {
+	background-color: #E8E9EF;
+}
+#statweetstics-title .geometric-triangle {
+	background-color: #fff;
+	-webkit-clip-path: polygon(100% 0, 100% 38%, 26% 100%, 0 41%, 0 0);
+	clip-path: polygon(100% 0, 100% 38%, 26% 100%, 0 41%, 0 0);
+	text-align: center;
+	padding-top: 50px;
+}
+#statweetstics-title .geometric-triangle h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	font-size: 40px;
+	font-size: 4.5vh;
+	font-family: 'BrandonGrotesque-Light';
+}
+#statweetstics-title .geometric-triangle h1 span {
+    font-family: 'BrandonGrotesque-Regular';
+}
+#back-button img {
+	margin-top: 20px;
+	margin-left: 20px;
+	position: fixed;
+	height: 35px;
+	z-index: 999;
+}
+
+
+/* ------------------ BODY ------------------ */
+#statweetics-body {
+	background-color: #E8E9EF;
+	height: 75%;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+#statweetics-body hr {
+	color: #000;
+	background-color: #000;
+}
+#statweetics-body p {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+#statweetics-body img {
+	width: 75%;
+	margin: 0px auto;
+	height: auto;
+}
+
+
+/* ------------------ FOOTER ------------------ */
+#statweetstics-footer {
+	height: 10%;
+}
+#statweetstics-footer .geometric-background {
+	background-color: #E8E9EF;
+}
+#statweetstics-footer .geometric-triangle {
+	background-color: #fff;
+	-webkit-clip-path: polygon(78% 0, 0% 100%, 100% 100%);
+	clip-path: polygon(78% 0, 0% 100%, 100% 100%);
+	color: #000;
+	text-align: center;
+	vertical-align: bottom;
+	display: table-cell;
+}
+#statweetstics-footer .geometric-triangle p {
+	color: #000;
+	z-index: 999;
+	font-family: 'Garamond';
+	letter-spacing: 2px;
+	font-size: 15px;
+	position: absolute;
+    bottom: 0;
+	left: calc(50% - 60px);
+}
