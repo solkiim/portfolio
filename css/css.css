@@ -457,6 +457,9 @@ div.progress-bar {
 #projects p a:hover {
 	cursor: pointer;
 }
+#projects p br {
+	line-height: 40px;
+}
 #gc3 {
 	height: 20%;
 }
