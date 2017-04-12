@@ -82,11 +82,11 @@ $(window).resize(function(){
 
 // animate all of the progress bars
 function progressbaranim() {
-    progressbarindiv(document.getElementById("java-bar"), 90);
-	progressbarindiv(document.getElementById("c-xaml-bar"), 65);
-	progressbarindiv(document.getElementById("ruby-bar"), 75);
-	progressbarindiv(document.getElementById("js-bar"), 70);
+    progressbarindiv(document.getElementById("python-bar"), 90);
+    progressbarindiv(document.getElementById("java-bar"), 85);
+	progressbarindiv(document.getElementById("ruby-bar"), 60);
 	progressbarindiv(document.getElementById("html-bar"), 90);
+	progressbarindiv(document.getElementById("js-bar"), 80);
 }
 
 // start individual progress bars
