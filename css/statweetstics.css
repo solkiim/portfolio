@@ -1,3 +1,12 @@
+html a {
+    color: #162252;
+	font-weight: 800;
+}
+html a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
 /* ------------------ TITLE ------------------ */
 #statweetstics-title {
 	height: 25%;

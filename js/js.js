@@ -49,15 +49,15 @@ $(window).scroll(function() {
 	var s = $(window).scrollTop() + 30;
 	
 	if (!hamburger) {
-		if (s >= aboutTop && s < experienceTop) {
-			$("#myNavbar a").css("color", "#fff");
-			$("#myNavbar a:hover").css("color", "#000");
-			$("#myNavbar .active a").css("color", "#000");
-			$(".navbar-default .navbar-toggle .icon-bar").attr("style", "background-color: #fff!important");
-		} else if (s + 40 > contactTop) {
+		if (s + 40 > contactTop) {
 			$("#myNavbar a").css("color", "#fff");
 			$("#myNavbar a:hover").css("color", "#EF106D");
 			$("#myNavbar .active a").css("color", "#EF106D");
+			$(".navbar-default .navbar-toggle .icon-bar").attr("style", "background-color: #fff!important");
+		} else if (s >= aboutTop && s < experienceTop) {
+			$("#myNavbar a").css("color", "#fff");
+			$("#myNavbar a:hover").css("color", "#000");
+			$("#myNavbar .active a").css("color", "#000");
 			$(".navbar-default .navbar-toggle .icon-bar").attr("style", "background-color: #fff!important");
 		} else {
 			$("#myNavbar a").css("color", "#000");
