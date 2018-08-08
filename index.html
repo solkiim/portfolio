@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>sol kim</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- icon -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animsition.min.css">
+	<link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+	<!-- INTRO -->
+	<div class="fullpage animsition" data-animsition-in-class="zoom-in-sm" data-animsition-in-duration="1000" id="intro">
+		<!-- NAV -->
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<p id="explore">explore</p>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a>hi</a></li>
+					<li><a href="about.html" class="animsition-link" data-animsition-out-class="rotate-out-sm" data-animsition-out-duration="800">
+						about
+					</a></li>
+					<li><a href="experience.html" class="animsition-link" data-animsition-out-class="fade-out-down" data-animsition-out-duration="800">
+						experience
+					</a></li>
+					<li><a href="projects.html" class="animsition-link" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="800">
+						projects
+					</a></li>
+					<li><a href="contact.html" class="animsition-link" data-animsition-out-class="flip-out-y" data-animsition-out-duration="800">
+						contact
+					</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- WELCOME -->
+		<div class="teal-div"></div>
+		<h1 id="welcome-text"></h1>
+	
+		<!-- SOCIAL -->
+		<div id="social">
+			<a href="https://www.facebook.com/solkiim" target="_blank"><img src="img/social/facebook.svg" alt="facebook"></a>
+			<a href="mailto:sol_kim@brown.edu?Subject=Hey%20Sol!"><img src="img/social/email.svg" alt="email"></a>
+			<a href="https://www.linkedin.com/in/solkim" target="_blank"><img src="img/social/linkedin.svg" alt="linkedin"></a>
+		</div>
+	</div>
+	
+	<!-- JAVASCRIPT -->
+	<script src="js/addon.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// animsition
+			$(".animsition").animsition({
+				linkElement: '.animsition-link',
+				loading: true,
+				loadingParentElement: 'body',
+				loadingClass: 'animsition-loading',
+				loadingInner: '', // e.g '<img src="loading.svg" />'
+				timeout: false,
+				timeoutCountdown: 5000,
+				onLoadEvent: true,
+				browser: [ 'animation-duration', '-webkit-animation-duration'],
+				overlay : false,
+				overlayClass : 'animsition-overlay-slide',
+				overlayParentElement : 'body',
+				transition: function(url){ window.location.href = url; }
+			});
+			
+			// typed
+			var typed = new Typed('#welcome-text', {
+				strings: ["hi, i’m <span>sol</span>"],
+				typeSpeed: 30,
+				startDelay: 950,
+				loop: false,
+				showCursor: false,
+			});
+
+			// navbar
+			$('.navbar-toggle').click(function() {
+				$('#explore').toggle(500);
+			});
+		});
+	</script>
+</body>
+</html>

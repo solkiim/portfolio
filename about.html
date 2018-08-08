@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>sol | about</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- icon -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="css/aos.css">-->
+	<link rel="stylesheet" href="css/animsition.min.css">
+	<link rel="stylesheet" href="css/css.css">
+</head>
+
+<body><!-- ABOUT -->
+	<div class="animsition" data-animsition-in-class="rotate-in-sm" data-animsition-in-duration="1000" id="about">
+		<!-- NAV -->
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html" class="animsition-link" data-animsition-out-class="zoom-out-sm" data-animsition-out-duration="800">hi</a></li>
+					<li class="active"><a>about</a></li>
+					<li><a href="experience.html" class="animsition-link" data-animsition-out-class="fade-out-down" data-animsition-out-duration="800">
+						experience
+					</a></li>
+					<li><a href="projects.html" class="animsition-link" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="800">
+						projects
+					</a></li>
+					<li><a href="contact.html" class="animsition-link" data-animsition-out-class="flip-out-y" data-animsition-out-duration="800">
+						contact
+					</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="teal-div"></div>
+		<div id="about-description">
+			<h1>i am</h1>
+			<hr>
+			<p>i’m sol, a californian studying computer science at brown university.
+			<br>check out the <a href="experience.html">things i’ve done</a>, the <a href="projects.html">projects i’ve built</a>, and the <a href="http://sol.kim/" target="_blank">places i’ve been</a>!</p>
+		</div>
+		
+		<h3 id="identity-carousel"></h3>
+		
+		<div id="about-images">
+			<img src="img/about/about1.png" alt="sol 1">
+			<img src="img/about/about2.jpg" alt="sol 2">
+			<img src="img/about/about3.jpg" alt="sol 3">
+			<img src="img/about/about4.jpg" alt="sol 4">
+		</div>
+	</div>
+		
+	<!-- JAVASCRIPT -->
+	<script src="js/addon.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		// animsition
+		$(".animsition").animsition({
+			linkElement: '.animsition-link',
+			loading: true,
+			loadingParentElement: 'body',
+			loadingClass: 'animsition-loading',
+			loadingInner: '', // e.g '<img src="loading.svg" />'
+			timeout: false,
+			timeoutCountdown: 5000,
+			onLoadEvent: true,
+			browser: [ 'animation-duration', '-webkit-animation-duration'],
+			overlay : false,
+			overlayClass : 'animsition-overlay-slide',
+			overlayParentElement : 'body',
+			transition: function(url){ window.location.href = url; }
+		});
+		
+		// typed
+		var typed = new Typed('#identity-carousel', {
+			strings: ['a #girlwhocodes', 'a Warriors fan', 'a satirical writer'],
+			typeSpeed: 18,
+			startDelay: 1200,
+			fadeOut: true,
+			backDelay: 1500,
+			loop: true,
+			showCursor: false,
+		});
+		
+		// slick carousel
+		$('#about-images').slick({
+			accessibility: false,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			speed: 1700,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			dots: false,
+			adaptiveHeight: false,
+			draggable: false,
+			swipe: false,
+			touchMove: false,
+			fade: true,
+			infinite: true,
+			pauseOnFocus: false,
+			pauseOnHover: false,
+		});
+	});
+	</script>
+</body>
+</html>

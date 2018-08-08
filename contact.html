@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>sol | contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- icon -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="css/aos.css">-->
+	<link rel="stylesheet" href="css/animsition.min.css">
+	<link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+	<div class="animsition" data-animsition-in-class="flip-in-y" data-animsition-in-duration="1000" id="contact">
+		<!-- NAV -->
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html" class="animsition-link" data-animsition-out-class="zoom-out-sm" data-animsition-out-duration="800">hi</a></li>
+					<li><a href="about.html" class="animsition-link" data-animsition-out-class="rotate-out-sm" data-animsition-out-duration="800">
+						about
+					</a></li>
+					<li><a href="experience.html" class="animsition-link" data-animsition-out-class="fade-out-down" data-animsition-out-duration="800">
+						experience
+					</a></li>
+					<li><a href="projects.html" class="animsition-link" data-animsition-out-class="fade-out-left-lg" data-animsition-out-duration="800">
+						projects
+					</a></li>
+					<li class="active"><a>contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- BACKGROUND DIV -->
+		<div class="teal-div">
+			<h1 id="say-hi"></h1>
+			
+			<!-- CONTACT FORM -->
+			<form action="MAILTO:sol_kim@brown.edu?subject=Hey%20Sol!" id="contact-form" name="contact-form" method="post" enctype="text/plain">
+				<div class="container-fluid" id="form-contact-info">
+					<div class="row">
+						<div class="col-md-6">
+							<input id="name" name="Name" placeholder="name" type="text" required>
+						</div>
+						<div class="col-md-6">
+							<input id="email" name="Email" placeholder="email" type="email" required>
+						</div>
+					</div>
+				</div>
+				<textarea cols="35" id="message" name="Message" placeholder="message" rows="10" required></textarea>
+				<input type="submit" value="send it over!">
+			</form>
+			
+			<!-- SOCIAL MEDIA -->
+			<div id="social-media">
+				<a href="mailto:sol_kim@brown.edu?Subject=Hey%20Sol!">
+					<img src="img/social/email.svg" alt="email">
+				</a>
+				<a href="https://github.com/solkiim" target="_blank">
+					<img src="img/social/github.svg" alt="github">
+				</a>
+				<a href="https://www.linkedin.com/in/solkim" target="_blank">
+					<img src="img/social/linkedin.svg" alt="linkedin">
+				</a>
+				<a href="https://www.instagram.com/solkim_/" target="_blank">
+					<img src="img/social/instagram.svg" alt="instagram">
+				</a>
+				<a href="https://www.facebook.com/solkiim" target="_blank">
+					<img src="img/social/facebook.svg" alt="facebook">
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- JAVASCRIPT -->
+	<script src="js/addon.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		// animsition
+		$(".animsition").animsition({
+			linkElement: '.animsition-link',
+			loading: true,
+			loadingParentElement: 'body',
+			loadingClass: 'animsition-loading',
+			loadingInner: '', // e.g '<img src="loading.svg" />'
+			timeout: false,
+			timeoutCountdown: 5000,
+			onLoadEvent: true,
+			browser: [ 'animation-duration', '-webkit-animation-duration'],
+			overlay : false,
+			overlayClass : 'animsition-overlay-slide',
+			overlayParentElement : 'body',
+			transition: function(url){ window.location.href = url; }
+		});
+		
+		var typed = new Typed('#say-hi', {
+			strings: ["say hi!"],
+			typeSpeed: 95,
+			startDelay: 120,
+			loop: false,
+			showCursor: false,
+		});
+	});
+	</script>
+</body>
+</html>
