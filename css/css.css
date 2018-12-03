@@ -158,13 +158,9 @@ a, a:hover, a:visited, a:active {
 	background-color: transparent;
 	color: #000!important;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
-	font-weight: bold;
-	font-size: 20px;
-	background-color: transparent;
-}
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	font-size: 20px;
+	font-weight: bold;
 	transition: font-size 0.1s;
 }
 .collapse.in {
@@ -1217,7 +1213,9 @@ a, a:hover, a:visited, a:active {
 
 
 
-
+/* ------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- MODALS ----------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
 .closebt-container {
 	width:100%;
 	text-align:center;
@@ -1229,7 +1227,6 @@ a, a:hover, a:visited, a:active {
 	top: 35px;
 	z-index: 999;
 }
-
 .closebt {
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -1240,7 +1237,6 @@ a, a:hover, a:visited, a:active {
 	height: 50px;
 	width: 50px;
 }
-
 .closebt:hover {
 	transform:rotate(90deg);
 }
