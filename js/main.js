@@ -1,22 +1,30 @@
 $(document).ready(function() {
 	// -------------------------- MODALS --------------------------
 	$("#aboutmodal-link").animatedModal({
-		// color: '#ffffff',
+		color: '#ffffff',
+		animatedIn: 'bounceInUp',
+		animatedOut: 'bounceOutDown',
 		modalTarget: 'aboutmodal',
 	});
 	
 	$("#experiencemodal-link").animatedModal({
-		// color: '#ffffff',
+		color: '#ffffff',
+		animatedIn: 'bounceInUp',
+		animatedOut: 'bounceOutDown',
 		modalTarget: 'experiencemodal',
 	});
 	
 	$("#projectsmodal-link").animatedModal({
-		// color: '#ffffff',
+		color: '#ffffff',
+		animatedIn: 'bounceInUp',
+		animatedOut: 'bounceOutDown',
 		modalTarget: 'projectsmodal',
 	});
 	
 	$("#contactmodal-link").animatedModal({
-		// color: '#ffffff',
+		color: '#ffffff',
+		animatedIn: 'bounceInUp',
+		animatedOut: 'bounceOutDown',
 		modalTarget: 'contactmodal',
 	});
 	

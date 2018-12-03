@@ -1212,3 +1212,35 @@ a, a:hover, a:visited, a:active {
 		margin-top: 110px;
 	}
 }
+
+
+
+
+
+
+.closebt-container {
+	width:100%;
+	text-align:center;
+/*
+	position: relative;
+	margin-top:40px;
+*/
+	position: fixed;
+	top: 35px;
+	z-index: 999;
+}
+
+.closebt {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	cursor:pointer;
+	height: 50px;
+	width: 50px;
+}
+
+.closebt:hover {
+	transform:rotate(90deg);
+}

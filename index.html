@@ -50,17 +50,8 @@
 	</div>
 	
 	<!-- JAVASCRIPT -->
-	<script src="js/addon.min.js"></script>
-	<script src="js/typed.min.js"></script>
+	<script src="js/jquery_bootstrap_typed.min.js"></script>
 	<script>
-		// Google Analytics
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-57091544-1', 'auto');
-		ga('send', 'pageview');
-		
 		$(document).ready(function() {
 			// typed
 			var introTyped = new Typed('#welcome-text', {
@@ -82,8 +73,8 @@
 	
 	<!-- ABOUT -->
 	<div id="aboutmodal">
-		<div class="close-aboutmodal"> 
-			CLOSE MODAL
+		<div class="close-aboutmodal closebt-container"> 
+			<img class="closebt" src="img/up.svg">
 		</div>
 
 		<div class="modal-content">
@@ -109,8 +100,8 @@
 	</div>
 	
 	<div id="experiencemodal">
-		<div class="close-experiencemodal">
-			CLOSE MODAL
+		<div class="close-experiencemodal closebt-container">
+			<img class="closebt" src="img/closebt.svg">
 		</div>
 		
 		<div class="modal-content">
@@ -164,8 +155,8 @@
 	</div>
 	
 	<div id="projectsmodal">
-		<div class="close-projectsmodal">
-			CLOSE MODAL
+		<div class="close-projectsmodal closebt-container">
+			<img class="closebt" src="img/closebt.svg">
 		</div>
 		
 		<div class="modal-content">
@@ -315,8 +306,8 @@
 	</div>
 	
 	<div id="contactmodal">
-		<div class="close-contactmodal">
-			CLOSE MODAL
+		<div class="close-contactmodal closebt-container">
+			<img class="closebt" src="img/closebt.svg">
 		</div>
 		
 		<div class="modal-content">
@@ -365,8 +356,16 @@
 	</div>
 	
 	<!-- JAVASCRIPT -->
-	<script src="js/animatedModal.min.js"></script>
-	<script src="js/slick.min.js"></script>
+	<script src="js/animatedModal_slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		// Google Analytics
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-57091544-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>
