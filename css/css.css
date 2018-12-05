@@ -158,13 +158,9 @@ a, a:hover, a:visited, a:active {
 	background-color: transparent;
 	color: #000!important;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
-	font-weight: bold;
-	font-size: 20px;
-	background-color: transparent;
-}
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	font-size: 20px;
+	font-weight: bold;
 	transition: font-size 0.1s;
 }
 .collapse.in {
@@ -185,6 +181,82 @@ a, a:hover, a:visited, a:active {
 		padding: 0 10px;
 	}
 }
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- MODALS ------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------- */
+
+.closebt-container {
+	width:100px;
+	text-align:center;
+	position: fixed;
+	top: 20px;
+	z-index: 999;
+	left: calc(50% - 50px);
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+.arrow-icon {
+  position: relative;
+  top: -1px;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  vertical-align: middle;
+}
+.arrow-icon--circle {
+  transition: stroke-dashoffset .3s ease;
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+}
+.arrow-container {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+@media (min-width: 769px) {
+	.arrow-container:hover .arrow-icon--circle {
+	  stroke-dashoffset: 0;
+	}
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+  60% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+  60% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+}
+
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- SLICK JS ---------------------------------------------- */
@@ -350,6 +422,10 @@ a, a:hover, a:visited, a:active {
 	width: 39%;
 	max-width: 500px;
 	z-index: -99;
+}
+#about-images img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 #about-description {
 	position: static;
