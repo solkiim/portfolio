@@ -183,6 +183,82 @@ a, a:hover, a:visited, a:active {
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- MODALS ------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------- */
+
+.closebt-container {
+	width:100px;
+	text-align:center;
+	position: fixed;
+	top: 20px;
+	z-index: 999;
+	left: calc(50% - 50px);
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+.arrow-icon {
+  position: relative;
+  top: -1px;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  vertical-align: middle;
+}
+.arrow-icon--circle {
+  transition: stroke-dashoffset .3s ease;
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+}
+.arrow-container {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+@media (min-width: 769px) {
+	.arrow-container:hover .arrow-icon--circle {
+	  stroke-dashoffset: 0;
+	}
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+  60% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+  60% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------- SLICK JS ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
 
@@ -346,6 +422,10 @@ a, a:hover, a:visited, a:active {
 	width: 39%;
 	max-width: 500px;
 	z-index: -99;
+}
+#about-images img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 #about-description {
 	position: static;
@@ -1207,36 +1287,4 @@ a, a:hover, a:visited, a:active {
 	#contact .teal-div {
 		margin-top: 110px;
 	}
-}
-
-
-
-
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* ----------------------------------------------- MODALS ----------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------- */
-.closebt-container {
-	width:100%;
-	text-align:center;
-/*
-	position: relative;
-	margin-top:40px;
-*/
-	position: fixed;
-	top: 35px;
-	z-index: 999;
-}
-.closebt {
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-	cursor:pointer;
-	height: 50px;
-	width: 50px;
-}
-.closebt:hover {
-	transform:rotate(90deg);
 }

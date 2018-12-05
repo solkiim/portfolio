@@ -2,29 +2,29 @@ $(document).ready(function() {
 	// -------------------------- MODALS --------------------------
 	$("#aboutmodal-link").animatedModal({
 		color: '#ffffff',
-		animatedIn: 'bounceInUp',
-		animatedOut: 'bounceOutDown',
+		animatedIn: 'zoomInUp',
+		animatedOut: 'zoomOutDown',
 		modalTarget: 'aboutmodal',
 	});
 	
 	$("#experiencemodal-link").animatedModal({
 		color: '#ffffff',
-		animatedIn: 'bounceInUp',
-		animatedOut: 'bounceOutDown',
+		animatedIn: 'zoomInUp',
+		animatedOut: 'zoomOutDown',
 		modalTarget: 'experiencemodal',
 	});
 	
 	$("#projectsmodal-link").animatedModal({
 		color: '#ffffff',
-		animatedIn: 'bounceInUp',
-		animatedOut: 'bounceOutDown',
+		animatedIn: 'zoomInUp',
+		animatedOut: 'zoomOutDown',
 		modalTarget: 'projectsmodal',
 	});
 	
 	$("#contactmodal-link").animatedModal({
 		color: '#ffffff',
-		animatedIn: 'bounceInUp',
-		animatedOut: 'bounceOutDown',
+		animatedIn: 'zoomInUp',
+		animatedOut: 'zoomOutDown',
 		modalTarget: 'contactmodal',
 	});
 	
@@ -84,15 +84,5 @@ $(document).ready(function() {
 
 	// tooltip
 	$('[data-toggle="tooltip"]').tooltip();
-	
-	
-	// -------------------------- CONTACT --------------------------
-	var contactTyped = new Typed('#say-hi', {
-		strings: ["say hi!"],
-		typeSpeed: 95,
-		startDelay: 120,
-		loop: false,
-		showCursor: false,
-	});
 });
 
