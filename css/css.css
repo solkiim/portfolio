@@ -165,6 +165,7 @@ a, a:hover, a:visited, a:active {
 	font-size: 20px;
 	font-weight: bold;
 	transition: font-size 0.1s;
+	background-color: transparent;
 }
 .collapse.in {
 	display: block !important;
