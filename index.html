@@ -14,10 +14,6 @@
 	<!-- JAVASCRIPT -->
 	<script src="js/jquery_bootstrap_typed.min.js"></script>
 	<script>
-		$(window).load(function() {
-			$("body").addClass('all-loaded');
-		});
-		
 		$(document).ready(function() {
 			// typed
 			var introTyped = new Typed('#welcome-text', {
@@ -33,8 +29,13 @@
 				$('#explore').toggle(500);
 			});
 		});
+						  
+		$(window).load(function() {
+			$(".sol-modal").show();
+		});
 	</script>
 	
+<!--
 	<noscript>
 		<style>
 			body {
@@ -42,6 +43,7 @@
 			}
 		</style>
 	</noscript>
+-->
 </head>
 
 <body>
@@ -81,7 +83,7 @@
 	
 	<!--------------------------- MODALS --------------------------->
 	<!-- ABOUT -->
-	<div id="aboutmodal">
+	<div id="aboutmodal" class="sol-modal">
 		<div class="close-aboutmodal closebt-container">
 			<div class="arrow-container">
 				<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 32 32">
@@ -124,7 +126,7 @@
 		</div>
 	</div>
 	
-	<div id="experiencemodal">
+	<div id="experiencemodal" class="sol-modal">
 		<div class="close-experiencemodal closebt-container">
 			<div class="arrow-container">
 				<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 32 32">
@@ -186,7 +188,7 @@
 		</div>
 	</div>
 	
-	<div id="projectsmodal">
+	<div id="projectsmodal" class="sol-modal">
 		<div class="close-projectsmodal closebt-container">
 			<div class="arrow-container">
 				<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 32 32">
@@ -344,7 +346,7 @@
 		</div>
 	</div>
 	
-	<div id="contactmodal">
+	<div id="contactmodal" class="sol-modal">
 		<div class="close-contactmodal closebt-container">
 			<div class="arrow-container">
 				<svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 32 32">
