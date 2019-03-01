@@ -50,6 +50,12 @@ body, html {
 	font-family: 'SofiaProBold', Arial, sans-serif;
 	color: #000;
 }
+body {
+	opacity: 0;
+}
+body.all-loaded {
+	opacity: 1;
+}
 .fullpage {
 	width: 100%;
 	height: 100vh;
@@ -352,6 +358,9 @@ a, a:hover, a:visited, a:active {
 /* ------------------------------------------------ INDEX ------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------- */
 
+#intro {
+/*	background-color: white;*/
+}
 #intro h1 {
 	margin: 0;
 	font-size: 70px;

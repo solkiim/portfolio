@@ -10,6 +10,38 @@
 	<!-- css -->
 	<link rel="stylesheet" href="css/bootstrap_animatedmodal.min.css">
 	<link rel="stylesheet" href="css/css.css">
+	
+	<!-- JAVASCRIPT -->
+	<script src="js/jquery_bootstrap_typed.min.js"></script>
+	<script>
+		$(window).load(function() {
+			$("body").addClass('all-loaded');
+		});
+		
+		$(document).ready(function() {
+			// typed
+			var introTyped = new Typed('#welcome-text', {
+				strings: ["hi, i’m <span>sol</span>"],
+				typeSpeed: 30,
+				startDelay: 950,
+				loop: false,
+				showCursor: false,
+			});
+
+			// navbar
+			$('.navbar-toggle').click(function() {
+				$('#explore').toggle(500);
+			});
+		});
+	</script>
+	
+	<noscript>
+		<style>
+			body {
+				opacity: 1;
+			}
+		</style>
+	</noscript>
 </head>
 
 <body>
@@ -47,28 +79,7 @@
 		</div>
 	</div>
 	
-	<!-- JAVASCRIPT -->
-	<script src="js/jquery_bootstrap_typed.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			// typed
-			var introTyped = new Typed('#welcome-text', {
-				strings: ["hi, i’m <span>sol</span>"],
-				typeSpeed: 30,
-				startDelay: 950,
-				loop: false,
-				showCursor: false,
-			});
-
-			// navbar
-			$('.navbar-toggle').click(function() {
-				$('#explore').toggle(500);
-			});
-		});
-	</script>
-	
-<!--------------------------- MODALS --------------------------->
-	
+	<!--------------------------- MODALS --------------------------->
 	<!-- ABOUT -->
 	<div id="aboutmodal">
 		<div class="close-aboutmodal closebt-container">
@@ -108,7 +119,6 @@
 					<img src="img/about/about1.png" alt="sol 1">
 					<img src="img/about/about2.jpg" alt="sol 2">
 					<img src="img/about/about3.jpg" alt="sol 3">
-<!--					<img src="img/about/about4.jpg" alt="sol 4">-->
 				</div>
 			</div>
 		</div>
