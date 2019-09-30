@@ -32,7 +32,7 @@ $(document).ready(function() {
 	// -------------------------- ABOUT --------------------------
 	// typed
 	var aboutTyped = new Typed('#identity-carousel', {
-		strings: ['a #girlwhocodes', 'a Warriors fan', 'a satirical writer'],
+		strings: ['an entp', 'an avid bananagrams player', 'a satirical writer', 'an enneagram type 8', 'a mostly contained mess', 'an optimist', 'a mediocre driver'],
 		typeSpeed: 18,
 		startDelay: 1200,
 		fadeOut: true,
@@ -72,7 +72,7 @@ $(document).ready(function() {
 		asNavFor: '#project-descriptions',
 		prevArrow: '<button class="slick-prev"><img src="img/projects/left-arrow.svg"></button>',
 		nextArrow: '<button class="slick-next"><img src="img/projects/right-arrow.svg"></button>',
-		adaptiveHeight: true,
+		adaptiveHeight: false,
 	});
 	$('#project-descriptions').slick({
 		slidesToScroll: 1,

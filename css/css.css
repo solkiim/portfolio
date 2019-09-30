@@ -797,10 +797,12 @@ a, a:hover, a:visited, a:active {
 
 /* carousel images */
 
+/*
 #project-images {
 	width: 70%;
 	margin: 0 auto;
 }
+*/
 
 /* carousel descriptions */
 
@@ -1295,3 +1297,23 @@ a, a:hover, a:visited, a:active {
 		margin-top: 110px;
 	}
 }
+#project-images {
+	width: 1000px;
+	margin: 0 auto;
+}
+@media (min-height: 0px) and (min-width: 1700px) {
+	#project-images {
+/*		width: 1200px;*/
+	}
+}
+@media (min-height: 0px) and (max-width: 1699px) {
+	#project-images {
+/*		width: 1000px;*/
+	}
+}
+@media (min-height: 0px) and (max-width: 1699px) {
+	#project-images {
+/*		width: 1000px;*/
+	}
+}
+
