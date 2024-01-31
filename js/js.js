@@ -32,7 +32,7 @@ $(document).ready(function() {
 	// -------------------------- ABOUT --------------------------
 	// typed
 	var aboutTyped = new Typed('#identity-carousel', {
-		strings: ['an entp', 'an avid bananagrams player', 'a satirical writer', 'an enneagram type 8', 'a mostly contained mess', 'an optimist', 'a mediocre driver'],
+		strings: ['a tpm', 'an enfp', 'an avid bananagrams player', 'a satirical writer', 'an enneagram type 8', 'a bad driver'],
 		typeSpeed: 18,
 		startDelay: 1200,
 		fadeOut: true,

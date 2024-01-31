@@ -594,7 +594,7 @@ a, a:hover, a:visited, a:active {
 #experience #work {
 	color: #fff;
 	font-size: 99px;
-	letter-spacing: 16px;
+	letter-spacing: 8px;
 	white-space: nowrap;
 	margin-left: 100px;
 	margin-top: -32px;
@@ -630,7 +630,7 @@ a, a:hover, a:visited, a:active {
 	display: inline-block;
 	color: #C4D7D7;
 	font-size: 36px;
-	letter-spacing: 9px;
+	letter-spacing: 4px;
 	margin: 0;
 }
 #resume svg {
@@ -671,7 +671,7 @@ a, a:hover, a:visited, a:active {
 @media (max-width: 767px) {
 	#experience #work {
 		font-size: 70px;
-		letter-spacing: 15px;
+		letter-spacing: 12px;
 		margin-left: 50px;
 		margin-top: -24px;
 	}
